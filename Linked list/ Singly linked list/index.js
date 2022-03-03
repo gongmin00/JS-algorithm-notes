@@ -38,7 +38,7 @@ function LinkedList() {
     }
     return elementList;
   };
-  // 3. insert方法根据提供的postion:number在链表中间插入数据
+  // 3. insert方法根据提供的postion:number在链表中间插入数据, 这里相当于把在position上原节点往后挪一个单位
   LinkedList.prototype.insert = function (position, element) {
     // 当position值小于0或者大于length时返回false，position可以等于length就相当于在链表末尾添加数据
     if (position < 0 || position > this.length) return false;
