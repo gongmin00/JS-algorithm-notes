@@ -48,7 +48,7 @@ function LinkedList() {
       newNode.next = this.head;
       this.head = newNode;
     } else {
-      //当在链表中间和末尾插入数据的时候
+      //当在链表中间和末尾插入数据的时候，这里i<position+1是为了能在链表末尾添加数据
       var currNode = this.head;
       var prevNode = null;
       for (i = 0; i < position + 1; i++) {
